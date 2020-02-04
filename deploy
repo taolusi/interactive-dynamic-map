@@ -86,7 +86,7 @@ git checkout -b $DEPLOY_BRANCH
 #rm -R _site/
 
 # move *.html to index.html
-find . -maxdepth 1 -name '*.html' -exec move {} index.html \;
+find . -maxdepth 1 -name '*.html' -exec mv {} index.html \;
 
 # Push to DEPLOY_BRANCH
 git add -fA
