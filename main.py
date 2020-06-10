@@ -1,13 +1,12 @@
 # coding=utf-8
 
-
-from example.commons import Faker
+from pyecharts.faker import Faker
 from pyecharts import options as opts
 from pyecharts.charts import Geo
 from pyecharts.globals import ChartType, SymbolType
 
 
-cities_coor = [("纽约", -77.0, 38.5), ("北京", 116.3, 39.5),
+cities_coor = [("华盛顿", -77.0, 38.5), ("北京", 116.3, 39.5),
                ("伦敦", 0, 52.0), ("香港", 114.2, 22.3),
                ("巴西利亚", -47.5, -15.4), ("堪培拉", 149.0, -35.1)]
 cities_value = [(x[0], int(x[2])) for x in cities_coor]
@@ -44,7 +43,7 @@ geo.add(
     linestyle_opts=opts.LineStyleOpts(
         curve=0.2),
     label_opts=opts.LabelOpts(
-        is_show=True,
+        is_show=False,
         position="left",
         formatter="{c}")
 )
