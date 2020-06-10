@@ -7,8 +7,9 @@ from pyecharts.charts import Geo
 from pyecharts.globals import ChartType, SymbolType
 
 
-cities_coor = [("纽约", -74.0, 40.4), ("北京", 116.3, 39.5),
-               ("伦敦", 0, 52.0), ("香港", 114.2, 22.3)]
+cities_coor = [("纽约", -77.0, 38.5), ("北京", 116.3, 39.5),
+               ("伦敦", 0, 52.0), ("香港", 114.2, 22.3),
+               ("巴西利亚", -47.5, -15.4), ("堪培拉", 149.0, -35.1)]
 cities_value = [(x[0], int(x[2])) for x in cities_coor]
 cities_arrow = []
 for city in cities_coor:
